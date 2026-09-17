@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-serif: 'Cinzel', serif, Georgia;
+    --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    --font-urdu: 'Amiri', 'Noto Nastaliq Urdu', serif;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #0b0907;
+    color: #ede8df;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, .font-serif-royal {
+    font-family: var(--font-serif);
+    letter-spacing: 0.02em;
+  }
+
+  .font-urdu {
+    font-family: var(--font-urdu);
+  }
+}
+
+/* Subtle Mughal Geometric Pattern Background */
+.bg-mughal-pattern {
+  background-image: radial-gradient(rgba(217, 119, 6, 0.07) 1px, transparent 0),
+                    radial-gradient(rgba(217, 119, 6, 0.03) 1px, #0b0907 1px);
+  background-size: 32px 32px;
+  background-position: 0 0, 16px 16px;
+}
+
+.bg-jaali-subtle {
+  background-color: #120e0b;
+  background-image: 
+    linear-gradient(45deg, rgba(217, 119, 6, 0.03) 25%, transparent 25%), 
+    linear-gradient(-45deg, rgba(217, 119, 6, 0.03) 25%, transparent 25%), 
+    linear-gradient(45deg, transparent 75%, rgba(217, 119, 6, 0.03) 75%), 
+    linear-gradient(-45deg, transparent 75%, rgba(217, 119, 6, 0.03) 75%);
+  background-size: 24px 24px;
+  background-position: 0 0, 0 12px, 12px -12px, -12px 0px;
+}
+
+/* Smooth custom gold border & glows */
+.border-gold-subtle {
+  border-color: rgba(217, 119, 6, 0.22);
+}
+
+.hover-glow:hover {
+  box-shadow: 0 10px 30px -10px rgba(217, 119, 6, 0.25);
+}
+
+/* Hide scrollbar for category tabs while maintaining scrollability */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Dastaan Restaurant",
+  "description": "A premium static Pakistani restaurant website featuring authentic royal cuisine, charcoal grills, interactive 3D hero experience, centralized configuration, and static hosting readiness.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
